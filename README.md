@@ -1,4 +1,4 @@
-<tittle>Juego clasico, que esperas ven a mirarlo</tittle>
+# <tittle>Juego clasico, que esperas ven a mirarlo</tittle>
 
 Bienvenidos al juego Player vs player ♥
 
