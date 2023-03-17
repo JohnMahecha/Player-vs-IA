@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lobster+Two&display=swap');
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: white;
+    background-image: url(./img/Nixeu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.titulo {
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    font-size: 30px;
+}
+
+.subtitulo {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px
+}
+
+.tarjeta-de-narberalgama {
+    width: 230px;
+    height: 130px;
+    background: lightslategray;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 20px;
+    display:flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tarjeta-de-narberalgama img {
+    width: 90px;
+}
+
+#boton-mascota {
+    height: 40px;
+    width: 160px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Lobster Two', cursive;
+    font-size: 25px;
+    margin: 10px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #1E90FF;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: lightslategray;
+    border-radius: 20px;
+    border: 2px solid #33FCFF;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Lobster Two', cursive;
+}
+
+#mensajes{
+    width: 250px;
+    background: lightslategray;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: black;
+    font-family: 'Lobster Two', cursive;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    color: white;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    height: 30px;
+    width: 130px;
+    border-radius: 15px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Lobster Two', cursive;
+    font-size: 22px;
+    margin: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-bg {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    #ver-mapa div {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
